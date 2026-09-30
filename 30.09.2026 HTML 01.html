@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Surendra Kumar | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #dbeafe, #f8fafc);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #111827;
+        }
+
+        .hero h1 span {
+            color: #0284c7;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin: 15px 0 25px;
+            color: #475569;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #0284c7;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 35px;
+            color: #111827;
+        }
+
+        /* About */
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #0284c7;
+            margin-bottom: 10px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #0284c7;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 25px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>P.SURENDRA KUMAR .K L</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Hello, I'm <span>Surendra Kumar</span></h1>
+
+            <p>
+                Student | Web Developer | Technology Enthusiast
+            </p>
+
+            <a href="#about" class="btn">Explore My Portfolio</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                Hello! My name is <b>Surendra Kumar</b>.
+                I am a college student interested in technology,
+                programming and web development.
+                I enjoy learning new technologies and developing
+                creative projects.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Personal Details -->
+    <section>
+        <h2>Personal Details</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Name</h3>
+                <p>Surendra Kumar</p>
+            </div>
+
+            <div class="card">
+                <h3>College</h3>
+                <p>Your College Name</p>
+            </div>
+
+            <div class="card">
+                <h3>Address</h3>
+                <p>Your Address</p>
+            </div>
+
+            <div class="card">
+                <h3>Education</h3>
+                <p>College Student</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>College</h3>
+                <p>Your Degree / Course</p>
+                <p>Your College Name</p>
+            </div>
+
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>Your College / School</p>
+            </div>
+
+            <div class="card">
+                <h3>School</h3>
+                <p>Your School Name</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Web Design</span>
+            <span class="skill">Problem Solving</span>
+        </div>
+    </section>
+
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2>Hobbies & Interests</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💻 Programming</h3>
+                <p>Learning programming and developing projects.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎵 Music</h3>
+                <p>Listening to music during free time.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚗 Cars</h3>
+                <p>Interested in cars and automobile technology.</p>
+            </div>
+
+            <div class="card">
+                <h3>📱 Technology</h3>
+                <p>Exploring new technology and applications.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+            <p>📧 Email: yourmail@example.com</p>
+            <p>📱 Phone: +91 1234567899</p>
+            <p>📍 Location: Hyderabad, Telangana</p>
+
+            <br>
+
+            <a href="mailto:yourmail@example.com" class="btn">
+                Send Email
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Surendra Kumar | Personal Portfolio
+        </p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+        // Simple welcome message
+        window.onload = function() {
+            console.log("Welcome to Surendra Kumar's Portfolio!");
+        };
+
+        // Button click example
+        document.querySelector(".hero .btn").addEventListener("click", function() {
+            console.log("Portfolio opened");
+        });
+    </script>
+
+</body>
+</html>
